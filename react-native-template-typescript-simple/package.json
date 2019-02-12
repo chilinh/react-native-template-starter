@@ -1,7 +1,7 @@
 {
   "name": "react-native-template-typescript-simple",
-  "version": "0.0.1",
-  "description": "React Native template with TypeScript",
+  "version": "1.0.0",
+  "description": "React Native template with TypeScript and ESLint",
   "scripts": {},
   "repository": {
     "type": "git",
