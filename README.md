@@ -14,7 +14,7 @@ react-native init AwesomeApp --template <FTK> && node AwesomeApp/setup.js
 
 ## What do we have
 
-- [React Native Template Typescript Simple]()
+- [React Native Template Typescript Simple](https://github.com/chilinh/react-native-template-starter/tree/master/react-native-template-typescript-simple)
 
 ## Inspire of
 
