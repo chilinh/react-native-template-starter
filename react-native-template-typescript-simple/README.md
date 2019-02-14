@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/react-native-template-typescript-simple.svg)](https://badge.fury.io/js/react-native-template-typescript-simple)
+
 # React Native with TypeScript and ESLint kit
 
 ## How to use
