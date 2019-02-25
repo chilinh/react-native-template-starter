@@ -11,9 +11,11 @@ const deleteDir = dirName => {
   if (fs.existsSync(fullPath)) {
     fs.readdirSync(fullPath).forEach(file => {
       const curPath = path.join(fullPath, file)
-      if (fs.lstatSync(curPath).isDirectory()) { // recurse
+      if (fs.lstatSync(curPath).isDirectory()) {
+        // recurse
         deleteDir(curPath)
-      } else { // delete file
+      } else {
+        // delete file
         fs.unlinkSync(curPath)
       }
     })
@@ -27,15 +29,10 @@ console.info('Preparing...')
 packageJson.scripts = {
   ...packageJson.scripts,
   tsc: 'tsc',
-  lint: 'eslint'
+  lint: 'eslint',
 }
 
 packageJson.jest = undefined
-
-packageJson.devDependencies = {
-  ...packageJson.devDependencies,
-  "babel-jest": "23.6.0"
-}
 
 writeFile('package.json', JSON.stringify(packageJson, null, 2))
 
@@ -44,5 +41,4 @@ deleteFile('App.js')
 deleteDir('__tests__')
 deleteFile('setup.js')
 
-console.warn(`Need to rerun 'yarn' again to fix ts-jest bug`)
 console.info(`FINISHED!`)
