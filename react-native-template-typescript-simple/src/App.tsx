@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Platform, StyleSheet, Text, View } from 'react-native'
 
 const instructions = Platform.select({
@@ -9,7 +9,7 @@ const instructions = Platform.select({
 type Props = {}
 
 const App: React.FC<Props> = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     console.info('Welcome to hook')
   })
 

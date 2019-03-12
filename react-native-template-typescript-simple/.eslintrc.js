@@ -27,6 +27,7 @@ module.exports = {
     'global-require': 'off',
 
     'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
 
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx', '.jsx'] }],
     'react/prop-types': 'off',
