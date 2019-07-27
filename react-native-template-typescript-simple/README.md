@@ -10,6 +10,6 @@ react-native init AwesomeApp --template typescript-simple && node AwesomeApp/set
 
 ## What's inside
 
-- ReactNative@0.59 the one with react-hook
-- Typescript@3.3.3
-- [TypeScript-ESLint](https://github.com/typescript-eslint/typescript-eslint) with [Airbnb rule](https://www.npmjs.com/package/eslint-config-airbnb) and preparing for [React Hook](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- ReactNative@0.60 the one with react-hook
+- Typescript@3.5.3
+- [TypeScript-ESLint](https://github.com/typescript-eslint/typescript-eslint) with React native rule and preparing for [React Hook](https://www.npmjs.com/package/eslint-plugin-react-hooks)
