@@ -19,20 +19,21 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  extends: ['airbnb', 'plugin:@typescript-eslint/recommended', 'prettier', 'prettier/@typescript-eslint'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:import/typescript',
+    '@react-native-community'
+  ],
   plugins: ['@typescript-eslint', 'react', 'react-hooks'],
   rules: {
     semi: ['error', 'never'],
     'no-console': ['warn', { allow: ['info', 'warn', 'error'] }],
     'global-require': 'off',
+    'arrow-parens': ['error', 'as-needed'],
 
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-
-    'react/jsx-filename-extension': ['warn', { extensions: ['.tsx', '.jsx'] }],
-    'react/prop-types': 'off',
-    'react/prefer-stateless-function': 'warn',
-    'react/no-array-index-key': 'warn',
 
     'import/no-named-as-default': 'off',
     'import/no-named-as-default-member': 'off',
@@ -41,6 +42,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/prefer-interface': 'off',
+    '@typescript-eslint/semi': ['error', 'never'],
 
     indent: 'off',
     '@typescript-eslint/indent': ['error', 2],
